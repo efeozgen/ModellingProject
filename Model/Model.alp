@@ -16,7 +16,7 @@
 		<ActiveObjectClass>
 			<Id>1704799364885</Id>
 			<Name><![CDATA[Main]]></Name>
-			<StartupCode><![CDATA[getEngine().setStopTime(150);]]></StartupCode>
+			<StartupCode><![CDATA[getEngine().setStopTime(600);]]></StartupCode>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1704799364891</Id>
@@ -112,7 +112,7 @@
 				<Variable Class="Parameter">
 					<Id>1705070087267</Id>
 					<Name><![CDATA[alternativeSystem]]></Name>
-					<X>1180</X><Y>310</Y>
+					<X>1180</X><Y>290</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -122,7 +122,7 @@
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[false]]></Code>
+							<Code><![CDATA[true]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1705070087265</Id>
@@ -1393,11 +1393,11 @@
 						<WeightColumnReference>
 						</WeightColumnReference>
 					</OptionQuery>					
-					<Argument><![CDATA[5.0]]></Argument>
-					<Argument><![CDATA[7.0]]></Argument>
-					<Argument><![CDATA[3.0]]></Argument>
-					<Argument><![CDATA[10.0]]></Argument>
-					<Argument><![CDATA[8.0]]></Argument>
+					<Argument><![CDATA[3.5]]></Argument>
+					<Argument><![CDATA[4.5]]></Argument>
+					<Argument><![CDATA[2.0]]></Argument>
+					<Argument><![CDATA[6.0]]></Argument>
+					<Argument><![CDATA[6.5]]></Argument>
 					<Value><![CDATA[30.0]]></Value>
 					<Value><![CDATA[30.0]]></Value>
 					<Value><![CDATA[20.0]]></Value>
@@ -1459,9 +1459,9 @@
 						</WeightColumnReference>
 					</OptionQuery>					
 					<Argument><![CDATA[30.0]]></Argument>
-					<Argument><![CDATA[24.0]]></Argument>
+					<Argument><![CDATA[23.0]]></Argument>
 					<Argument><![CDATA[45.0]]></Argument>
-					<Argument><![CDATA[28.0]]></Argument>
+					<Argument><![CDATA[20.0]]></Argument>
 					<Argument><![CDATA[1.0]]></Argument>
 					<Value><![CDATA[40.0]]></Value>
 					<Value><![CDATA[35.0]]></Value>
@@ -1480,7 +1480,7 @@
 				</CustomDistribution>
 				<CustomDistribution>
 					<Id>1704914151578</Id>
-					<Name><![CDATA[CustomerArrive]]></Name>
+					<Name><![CDATA[ShopCustomerArrive]]></Name>
 					<X>810</X><Y>420</Y>
 					<Label><X>14</X><Y>-2</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1547,7 +1547,7 @@
 				</CustomDistribution>
 				<CustomDistribution>
 					<Id>1704916473930</Id>
-					<Name><![CDATA[KuryeArrive]]></Name>
+					<Name><![CDATA[RemoteCustomerArrive]]></Name>
 					<X>810</X><Y>330</Y>
 					<Label><X>14</X><Y>-2</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1680,7 +1680,7 @@
     			<HistogramData>
 					<Id>1705068276645</Id>
 					<Name><![CDATA[totalTimeData]]></Name>
-					<X>1020</X><Y>320</Y>
+					<X>1020</X><Y>300</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1711,7 +1711,7 @@
     			<HistogramData>
 					<Id>1705068307411</Id>
 					<Name><![CDATA[queueTimeData]]></Name>
-					<X>1020</X><Y>360</Y>
+					<X>1020</X><Y>340</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1802,7 +1802,7 @@
 						<Parameter>
 							<Name><![CDATA[interarrivalTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[KuryeArrive()]]></Code>
+								<Code><![CDATA[RemoteCustomerArrive()]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 							</Value>
 						</Parameter>
@@ -1851,7 +1851,7 @@
 						<Parameter>
 							<Name><![CDATA[maxArrivals]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[30]]></Code>
+								<Code><![CDATA[500]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1911,7 +1911,7 @@
 						<Parameter>
 							<Name><![CDATA[speed]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[3]]></Code>
+								<Code><![CDATA[5]]></Code>
 								<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
 							</Value>
 						</Parameter>
@@ -2097,7 +2097,7 @@
 						<Parameter>
 							<Name><![CDATA[interarrivalTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[CustomerArrive()]]></Code>
+								<Code><![CDATA[ShopCustomerArrive()]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 							</Value>
 						</Parameter>
@@ -2146,7 +2146,7 @@
 						<Parameter>
 							<Name><![CDATA[maxArrivals]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[80]]></Code>
+								<Code><![CDATA[500]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2194,7 +2194,7 @@
 						<Parameter>
 							<Name><![CDATA[speed]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[8]]></Code>
+								<Code><![CDATA[5]]></Code>
 								<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
 							</Value>
 						</Parameter>
@@ -6349,6 +6349,9 @@
 					<Parameters>
 						<Parameter>
 							<Name><![CDATA[capacity]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[200]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[maximumCapacity]]></Name>
@@ -7735,7 +7738,7 @@
     			<Histogram>
 					<Id>1705169691136</Id>
 					<Name><![CDATA[chart]]></Name>
-					<X>290</X><Y>390</Y>
+					<X>260</X><Y>390</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -7799,7 +7802,7 @@
     			<Histogram>
 					<Id>1705169722945</Id>
 					<Name><![CDATA[chart1]]></Name>
-					<X>520</X><Y>390</Y>
+					<X>500</X><Y>390</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8472,7 +8475,7 @@
 			<MaximumMemory>512</MaximumMemory>
 			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
 			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
-			<SeedValue>1</SeedValue>
+			<SeedValue>5</SeedValue>
 			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
 			<VmArgs><![CDATA[]]></VmArgs>
 			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
